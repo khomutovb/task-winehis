@@ -79,10 +79,10 @@ $(document).ready(function () {
             $(".logo img").attr("src", "img/full_logo.png")
         }
     })
-    var kursorx = new kursor({
+/*     var kursorx = new kursor({
         type: 4,
         color: '#ADC62C',
-    })
+    }) */
     var x;
     $(window).on('resize scroll update', function () {
         x = $(window).scrollTop();
@@ -117,6 +117,11 @@ $(document).ready(function () {
         $(".overlay-nav").addClass('visibility');
     });
     $('.close-nav').click(function () {
+        $(".mobile-nav").removeClass('move');
+        $("body").removeClass('move');
+        $(".overlay-nav").removeClass('visibility');
+    });
+    $('.overlay-nav').click(function () {
         $(".mobile-nav").removeClass('move');
         $("body").removeClass('move');
         $(".overlay-nav").removeClass('visibility');
