@@ -294,10 +294,6 @@ header.sticky::after {
   position: relative;
 }
 
-.circle-block .circle-svg .circle-text {
-  opacity: 0;
-}
-
 .circle-block .circle-svg .circle-svg-main {
   -webkit-transform-origin: center;
           transform-origin: center;
