@@ -1,0 +1,50 @@
+.burger-svg circle {
+    stroke: #fff;
+    fill: transparent;
+    transition: fill 0.3s ease-in-out;
+}
+
+.burger-svg rect {
+    transform: translateY(100%);
+    fill: #ADC62C;
+    transition: transform 0.5s ease-in-out;
+}
+
+.burger-svg:hover rect,
+.burger-svg.burger-svg--active rect {
+    transform: translateY(0);
+    fill: #ADC62C;
+}
+
+.burger-svg:hover path {
+    fill: #fff;
+}
+
+.burger-svg:hover circle {
+    stroke: #ADC62C;
+}
+.call-svg circle {
+    stroke: #fff;
+    fill: transparent;
+    transition: fill 0.3s ease-in-out;
+}
+
+.call-svg rect {
+    transform: translateY(100%);
+    fill: #ADC62C;
+    transition: transform 0.5s ease-in-out;
+}
+
+.call-svg:hover rect,
+.call-svg.call-svg--active rect {
+    transform: translateY(0);
+    fill: #ADC62C;
+}
+
+.call-svg:hover path {
+    fill: #fff;
+}
+
+.call-svg:hover circle {
+    stroke: #ADC62C;
+}

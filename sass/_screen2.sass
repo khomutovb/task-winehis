@@ -1,0 +1,49 @@
+$strong_yellow : #ADC62C
+$grey : #818181
+.screen-2
+    width: 100%
+    height: 900px
+    background: url(../img/screen-2.png) no-repeat top
+    background-size: cover
+    background-position: top
+    position: relative
+    top: -100px
+    z-index: 1
+    transition: background-size 1.5s
+.circle-block
+    padding: 10px
+    padding-top: 270px
+    & .circle-svg
+        text-align: center
+        max-width: 550px
+        margin: auto
+        cursor: pointer
+        border-radius: 50%
+        position: relative
+        & .circle-text
+            opacity: 0
+        & .circle-svg-main
+            transform-origin: center
+    & .leaf-one
+        position: absolute
+        top: 40px
+        left: -90px
+    & .leaf-two
+        position: absolute
+        bottom: -40px
+        right: -50px
+    & .circle-description
+        & p
+            color: #fff
+            position: absolute
+            bottom: 70px
+            font-style: italic
+            font-weight: 300
+            font-size: 18px
+            & .link
+                color: $strong_yellow
+                text-decoration: underline
+                line-height: 20px
+
+
+    

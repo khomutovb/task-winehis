@@ -1,0 +1,58 @@
+$strong_yellow : #ADC62C
+$grey : #818181
+.mobile-nav
+    position: fixed
+    width: 400px
+    height: 100vh
+    background: #111111
+    z-index: 9999
+    right: 0
+    margin-right: -400px
+    transition: all 1s ease
+    &.move
+        margin-right: 0
+    & .close-nav
+        position: absolute
+        top: 35px
+        left: 48px
+        cursor: pointer
+    & .column-nav
+        display: flex
+        justify-content: center
+        flex-direction: column
+        align-items: center
+        height: 100%
+        & .nav-items
+            text-align: center
+            margin-top: 70px
+            & .nav-item
+                margin-bottom: 20px
+                & a
+                    text-decoration: none !important
+                    color: #FFFFFF
+        & .nav-items-social
+            margin-top: 40px
+            text-align: center
+            & .nav-item-social
+                font-size: 14px
+                margin-bottom: 10px
+                & a 
+                    text-decoration: none !important
+                    color: #787878
+body
+    position: relative
+    transition: margin-right 1s ease
+    &.move
+        margin-right: 400px
+        overflow: hidden
+    & .overlay-nav
+        position: absolute
+        width: 95vw
+        height: 100vh
+        background: rgba(0, 0, 0, .7)
+        z-index: 0
+        opacity: 0
+        transition: opacity .4s
+        &.visibility
+            opacity: 1
+            z-index: 999

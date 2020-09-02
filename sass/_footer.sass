@@ -1,0 +1,62 @@
+$strong_yellow : #ADC62C
+$grey : #818181
+$text-gray :  #838383
+footer
+    height: 200px   
+    background: #000000
+    display: flex
+    align-items: center
+    position: relative
+    & p
+        margin: 0
+    & .container-fluid
+        padding: 20px
+    & .footer-row
+        justify-content: space-between
+        align-items: center
+        & .copyright
+            & p 
+                color: $text-gray
+        & .designs
+            & p
+                color: $text-gray
+                text-align: right
+            & span 
+                color: $strong_yellow
+        & .form-block
+            color: $text-gray
+            & .form-row
+                align-items: center
+                & p
+                    margin-right: 30px
+            & .input
+                height: 54px
+                background: none
+                border: 1px solid #4E4E4E
+                border-radius: 39px
+                color: $text-gray
+                padding-left: 36px
+                margin-right: 20px
+            & input[type="submit"]
+                width: 144px
+                height: 54px
+                background: #383838
+                border: none
+                border-radius: 39px
+                color: $text-gray
+                transition: color .4s
+                &:hover
+                    color: $strong_yellow
+            & input
+                &:focus
+                    outline: none
+    & .glass1
+        position: absolute
+        bottom: -800px
+        z-index: -1
+    & .glass2
+        position: absolute
+        bottom: -500px
+        right: 0
+        z-index: -1
+        width: 350px

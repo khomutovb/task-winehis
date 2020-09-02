@@ -1,0 +1,66 @@
+$strong_yellow : #ADC62C
+$grey : #818181
+.screen-3
+    width: 100%
+    height: 830px
+    background: url(../img/lines1.png) no-repeat top
+    background-position: center
+    position: relative
+    z-index: 1
+    transition: background-size 1.5s
+    position: relative
+    top: -100px
+    &::before
+        content: ""
+        position: absolute
+        width: 100%
+        height: 20px
+        box-shadow: 0 0 50px 40px #222222
+        z-index: -1
+.block-about
+    width: 100%
+    text-align: center
+    & .center-text
+        max-width: 323px
+        margin: auto
+        padding-top: 20px
+    & .center-description
+        font-style: italic
+        font-weight: 300
+        font-size: 18px
+        line-height: 30px
+        text-align: center
+        color: #FFFFFF
+        max-width: 870px
+        margin: auto
+        margin-top: 16px
+    & .btn-learn
+        position: relative
+        margin-top: 106px
+        padding: 24px 40px
+        background: none
+        border: 1px solid
+        border-color: $strong_yellow
+        border-radius: 40px
+        color: white
+        transition: background .4s
+        &:focus
+            outline: none
+        &::after
+            position: absolute
+            content: ""
+            top: 0
+            left: 0
+            width: 100%
+            height: 100%
+            border-radius: 40px
+            background: linear-gradient(360deg, $strong_yellow 2.6%, #E2FE52 96.75%)
+            transition: opacity 0.5s ease-out
+            opacity: 0
+            z-index: -1
+        &:hover
+            color: #000
+            border-color: transparent
+            &::after
+                opacity: 1
+            

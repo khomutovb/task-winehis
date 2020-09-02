@@ -1,0 +1,98 @@
+$strong_yellow : #ADC62C
+$grey : #818181
+.slider
+    & .slide
+        position: relative
+        padding: 0 20px
+    & .slide-img
+        outline: none !important
+        border: none !important
+        min-height: 700px
+        object-fit: cover
+        & :focus
+            outline: none !important
+    & .slick-slide
+        &:focus
+            outline: none !important    
+.block-text
+    margin: auto
+    text-align: center
+    color: #fff
+#nums
+    font-family: "Abraham Lincoln"
+    font-size: 38px
+    color: #818181
+    & .active
+        color: $strong_yellow
+        font-size: 66px
+.btn-arrow
+    background: transparent
+    border: none
+    outline: none
+    margin: 0 10px
+    opacity: .8
+    transition: opacity .4s
+    padding: 10px
+    &:hover
+        opacity: 1
+.controls
+    align-items: center
+    justify-content: space-between
+    max-width: 83%
+    margin: auto
+    margin-top: -165px
+    position: relative
+    z-index: 12
+.middle-content
+    position: absolute
+    top: 150px
+    width: 100%
+    display: flex
+    justify-content: center
+    & .grape 
+        width: 500px
+        position: relative
+        left: -30px
+        pointer-events: none
+        z-index: 9
+    & .bottle
+        position: absolute
+        top: 22%
+        height: 1260px
+        pointer-events: none
+        z-index: 9
+        & img
+            max-height: 100%
+    & .overlay
+        width: 100%
+        height: 100%
+        max-width: 759px
+        max-height: 341px
+        background-image: url("../img/shadow.png")
+        background-repeat: no-repeat
+        background-size: contain
+        background-position: center
+        position: absolute
+        top: 22%
+        z-index: 9
+.slider-text
+    position: relative
+    top: -300px
+    z-index: 99
+    & :focus
+        outline: none !important
+    & .title
+        font-family: Abraham Lincoln
+        font-size: 90px
+        text-align: center
+        color: #FFFFFF
+    & .subtitle
+        font-family: Roboto
+        font-style: italic
+        font-weight: 500
+        font-size: 14px
+        line-height: 26px
+        text-align: center
+        color: #D3D3D3
+        max-width: 558px
+        margin: auto
