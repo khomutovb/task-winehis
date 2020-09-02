@@ -754,6 +754,9 @@ body .overlay-nav.visibility {
     width: 300px;
     margin: auto;
   }
+  body footer .glass1 {
+    display: none;
+  }
   body footer .glass2 {
     display: none;
   }
