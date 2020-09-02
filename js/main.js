@@ -95,13 +95,6 @@ $(document).ready(function () {
             $('.screen-3').css('background-size', 100 + parseInt(x / 90, 0) + '% ');
         }
     })
-    var waypoint = new Waypoint({
-        element: $('.subtitle'),
-        handler: function (direction) {
-            $('.circle-text').addClass('animated bounceInLeft');
-            $('.circle-text').css("opacity", "1")
-        }
-    })
     $(".circle-svg").tilt({
         maxTilt: 15,
         perspective: 1400,
